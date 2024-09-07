@@ -1,0 +1,159 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for resume content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean card effect */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #e0e0e0;
+}
+
+/* Section headings */
+h2 {
+    color: #0d6efd; /* Blue color for headings */
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 40px;
+    padding: 10px;
+    border-left: 5px solid #0d6efd; /* Blue accent bar on the left */
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 5px;
+}
+
+/* Personal Info section */
+.personal-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #0d6efd; /* Blue border around the profile picture */
+}
+
+/* ul styling */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+ul li strong {
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+ul li i {
+    color: #0d6efd; /* Blue color for Bootstrap icons */
+    font-size: 1.2rem; /* Slightly larger icons */
+    margin-right: 8px; /* Spacing between icon and text */
+}
+ul li {
+    background: #e7f1ff; /* Light blue background for each list item */
+    padding: 10px 15px; /* Padding inside each list item */
+    margin-bottom: 10px; /* Space between list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    display: flex; /* Flex layout to align icon and text */
+    align-items: center; /* Vertically align the icon and text */
+    color: #333; /* Dark grey text */
+    font-size: 1rem; /* Font size for the list items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+ul li:hover {
+    background: #d1e6ff; /* Slightly darker background on hover */
+}
+
+/* Custom bullet icon for list items */
+ul li::before {
+    content: "\2022"; /* Unicode bullet symbol */
+    color: #0d6efd; /* Blue color for the bullet icon */
+    font-weight: bold; /* Make the bullet bold */
+    display: inline-block; /* Inline-block to control spacing */
+    width: 1.5em; /* Space between the bullet and the text */
+    font-size: 1.5rem; /* Make the bullet larger than the text */
+}
+
+/* Nested ul styling */
+ul li ul {
+    margin-top: 10px; /* Space between parent and child ul */
+    padding-left: 20px; /* Indentation for nested lists */
+}
+
+ul li ul li {
+    background: #f8f9fa; /* Lighter background for nested list items */
+    border-radius: 6px; /* Slightly smaller border radius */
+    color: #555; /* Lighter color for nested list items */
+}
+
+/* Skills styling (optional enhancement) */
+.skills li {
+    display: inline-block;
+    background-color: #e7f1ff; /* Light blue background for skills */
+    color: #0d6efd;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.hidden {
+    display: none;
+}
+/* Style for the toggle buttons */
+.toggle-btn {
+    background-color: #0d6efd; /* Bootstrap blue or change to match resume */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Make the button round */
+    width: 40px; /* Small width */
+    height: 40px; /* Small height */
+    display: flex;
+    justify-content: center; /* Center the icon/text */
+    align-items: center; /* Center the icon/text */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.2rem; /* Adjust text/icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.toggle-btn:hover {
+    background-color: #0a58ca; /* Darker blue on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.toggle-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5); /* Custom focus outline */
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
